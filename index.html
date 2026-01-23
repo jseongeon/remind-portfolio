@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="리마인드 팔로우업 메시지 자동 발송 앱 - 데이터 기반 리타겟팅으로 수임율 88.5% 성장">
+  <title>REMIND | 데이터와 실행을 하나로</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+  
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Cursor Follower -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">💬</span>
+        <span class="logo__text">REMIND</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#discovery" class="nav__link">발견</a>
+        <a href="#solution" class="nav__link">솔루션</a>
+        <a href="#features" class="nav__link">기능</a>
+        <a href="#process" class="nav__link">프로세스</a>
+        <a href="#results" class="nav__link">성과</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__nav">
+      <a href="#discovery">발견</a>
+      <a href="#solution">솔루션</a>
+      <a href="#features">기능</a>
+      <a href="#process">프로세스</a>
+      <a href="#results">성과</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__gradient"></div>
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
+      </div>
+      
+      <div class="hero__container">
+        <div class="hero__content">
+          <div class="hero__badge" data-aos="fade-up">
+            <span class="badge">
+              <span class="badge__dot"></span>
+              CEO Staff 정성언
+            </span>
+          </div>
+          
+          <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+            데이터와 실행을<br>
+            <span class="text-gradient">하나로 연결</span>했습니다
+          </h1>
+          
+          <p class="hero__desc" data-aos="fade-up" data-aos-delay="200">
+            상담 데이터 기반 리타겟팅 강화 프로젝트<br>
+            리마인드 팔로우업 메시지 자동 발송 앱
+          </p>
+          
+          <div class="hero__metrics" data-aos="fade-up" data-aos-delay="300">
+            <div class="metric">
+              <span class="metric__value" data-count="11.6">0</span>
+              <span class="metric__suffix">%p</span>
+              <span class="metric__label">수임율 증가</span>
+            </div>
+            <div class="metric__divider"></div>
+            <div class="metric">
+              <span class="metric__value" data-count="88.5">0</span>
+              <span class="metric__suffix">%</span>
+              <span class="metric__label">성장률</span>
+            </div>
+            <div class="metric__divider"></div>
+            <div class="metric">
+              <span class="metric__value" data-count="3">0</span>
+              <span class="metric__suffix">일</span>
+              <span class="metric__label">리드타임 단축</span>
+            </div>
+          </div>
+          
+          <div class="hero__actions" data-aos="fade-up" data-aos-delay="400">
+            <a href="#discovery" class="btn btn--primary">
+              <span>자세히 알아보기</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+            <a href="#results" class="btn btn--ghost">성과 확인</a>
+          </div>
+        </div>
+        
+        <div class="hero__visual" data-aos="fade-left" data-aos-delay="300">
+          <div class="phone">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="app">
+                <div class="app__header">
+                  <span>💬</span> 리마인드 발송기
+                </div>
+                <div class="app__content">
+                  <div class="app__item app__item--done">
+                    <span class="app__icon">📊</span>
+                    <span>대상 자동 로드 완료</span>
+                    <span class="app__check">✓</span>
+                  </div>
+                  <div class="app__item app__item--done">
+                    <span class="app__icon">✅</span>
+                    <span>15명 발송 준비</span>
+                    <span class="app__check">✓</span>
+                  </div>
+                  <div class="app__item app__item--active">
+                    <span class="app__icon">🚀</span>
+                    <span>전송 중...</span>
+                    <span class="app__count">3/15</span>
+                  </div>
+                </div>
+                <div class="app__progress">
+                  <div class="app__progress-bar"></div>
+                </div>
+                <div class="app__footer">
+                  <span class="app__status">● 발송 진행중</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone__shadow"></div>
+        </div>
+      </div>
+      
+      <div class="hero__scroll">
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <div class="scroll-line">
+            <div class="scroll-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discovery Section -->
+    <section class="section" id="discovery">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <span class="section__label">01 — DISCOVERY</span>
+          <h2 class="section__title">데이터에서 발견한 기회</h2>
+          <p class="section__desc">분석을 통해 숨겨진 성장 포인트를 찾았습니다</p>
+        </header>
+        
+        <div class="insight" data-aos="fade-up" data-aos-delay="100">
+          <div class="insight__icon">💡</div>
+          <div class="insight__content">
+            <h3 class="insight__title">핵심 발견</h3>
+            <p class="insight__text">
+              중복 문의 고객의 수임율이 일반 고객 대비 
+              <strong class="highlight">현저히 높음</strong>
+            </p>
+          </div>
+          <div class="insight__glow"></div>
+        </div>
+        
+        <div class="compare">
+          <div class="compare__card compare__card--before" data-aos="fade-right">
+            <div class="compare__label">AS-IS</div>
+            <h4 class="compare__title">현재 상황</h4>
+            <ul class="compare__list">
+              <li>
+                <span class="icon icon--x">✕</span>
+                상담 후 별도 팔로우업 없음
+              </li>
+              <li>
+                <span class="icon icon--x">✕</span>
+                잠재 고객 이탈 방치
+              </li>
+              <li>
+                <span class="icon icon--x">✕</span>
+                수동 연락의 한계
+              </li>
+            </ul>
+          </div>
+          
+          <div class="compare__arrow" data-aos="zoom-in">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="24" fill="var(--blue)"/>
+              <path d="M16 24h16m-8-8l8 8-8 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          
+          <div class="compare__card compare__card--after" data-aos="fade-left">
+            <div class="compare__label">TO-BE</div>
+            <h4 class="compare__title">해결 방향</h4>
+            <ul class="compare__list">
+              <li>
+                <span class="icon icon--check">✓</span>
+                자동 리마인드 메시지 발송
+              </li>
+              <li>
+                <span class="icon icon--check">✓</span>
+                상담 시트 기반 타겟팅
+              </li>
+              <li>
+                <span class="icon icon--check">✓</span>
+                AI 활용 앱 자체 제작
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section section--dark" id="solution">
+      <div class="container">
+        <header class="section__header section__header--light" data-aos="fade-up">
+          <span class="section__label">02 — SOLUTION</span>
+          <h2 class="section__title">데이터와 실행을<br>하나로 연결했습니다</h2>
+        </header>
+        
+        <div class="steps">
+          <div class="step" data-aos="fade-up" data-aos-delay="0">
+            <div class="step__number">01</div>
+            <div class="step__icon">🎯</div>
+            <h3 class="step__title">Target</h3>
+            <span class="step__subtitle">발견</span>
+            <p class="step__text">상담 시트 데이터 분석을 통해 '가능성 높은 고객' 자동 식별</p>
+            <div class="step__line"></div>
+          </div>
+          
+          <div class="step" data-aos="fade-up" data-aos-delay="150">
+            <div class="step__number">02</div>
+            <div class="step__icon">⚙️</div>
+            <h3 class="step__title">Develop</h3>
+            <span class="step__subtitle">개발</span>
+            <p class="step__text">Python 기반 데스크톱 앱 제작 Google Sheets/Messages 연동</p>
+            <div class="step__line"></div>
+          </div>
+          
+          <div class="step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step__number">03</div>
+            <div class="step__icon">🚀</div>
+            <h3 class="step__title">Action</h3>
+            <span class="step__subtitle">실행</span>
+            <p class="step__text">AI 활용 개인화 메시지 생성 원클릭 자동 발송 시스템 구축</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <span class="section__label">03 — FEATURES</span>
+          <h2 class="section__title">복잡한 과정은 앱이,<br>사용자는 클릭만</h2>
+        </header>
+        
+        <div class="features">
+          <article class="feature" data-aos="fade-up" data-aos-delay="0">
+            <div class="feature__icon">📊</div>
+            <h3 class="feature__title">실시간 데이터 연동</h3>
+            <p class="feature__text">Google Sheets API를 활용해 리마인드 대상을 자동 로드</p>
+            <div class="feature__hover"></div>
+          </article>
+          
+          <article class="feature" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature__icon">🔄</div>
+            <h3 class="feature__title">안정적인 자동화 엔진</h3>
+            <p class="feature__text">Selenium 기반 웹 자동화로 전송 실패 시 자동 재시도 로직</p>
+            <div class="feature__hover"></div>
+          </article>
+          
+          <article class="feature" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature__icon">🖼️</div>
+            <h3 class="feature__title">이미지+텍스트 멀티 전송</h3>
+            <p class="feature__text">변리사별 프로필 이미지 등 맞춤 미디어를 함께 전송</p>
+            <div class="feature__hover"></div>
+          </article>
+          
+          <article class="feature" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature__icon">⚡</div>
+            <h3 class="feature__title">간편한 배포와 실행</h3>
+            <p class="feature__text">PyInstaller로 패키징된 실행 파일 QR 스캔 한 번으로 사용</p>
+            <div class="feature__hover"></div>
+          </article>
+        </div>
+        
+        <div class="tech-stack" data-aos="fade-up">
+          <span class="tech">Python</span>
+          <span class="tech">Selenium</span>
+          <span class="tech">Google Sheets API</span>
+          <span class="tech">Tkinter GUI</span>
+          <span class="tech">PyInstaller</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section section--gray" id="process">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <span class="section__label">04 — PROCESS</span>
+          <h2 class="section__title">사용 프로세스</h2>
+          <p class="section__desc">5단계로 간편하게 리마인드 메시지를 발송합니다</p>
+        </header>
+        
+        <div class="process">
+          <div class="process__item" data-aos="fade-up" data-aos-delay="0">
+            <div class="process__num">1</div>
+            <h4 class="process__title">초기 설정</h4>
+            <p class="process__text">Chrome 설치 확인 후<br>QR 코드 스캔으로 연결</p>
+          </div>
+          <div class="process__item" data-aos="fade-up" data-aos-delay="100">
+            <div class="process__num">2</div>
+            <h4 class="process__title">모드 선택</h4>
+            <p class="process__text">텍스트만 또는<br>이미지+텍스트 선택</p>
+          </div>
+          <div class="process__item" data-aos="fade-up" data-aos-delay="200">
+            <div class="process__num">3</div>
+            <h4 class="process__title">테스트 전송</h4>
+            <p class="process__text">연결 테스트 및<br>1명에게 테스트 발송</p>
+          </div>
+          <div class="process__item process__item--highlight" data-aos="fade-up" data-aos-delay="300">
+            <div class="process__num">4</div>
+            <h4 class="process__title">전체 전송</h4>
+            <p class="process__text">문제 없으면<br>전체 리마인드 발송</p>
+          </div>
+          <div class="process__item process__item--highlight" data-aos="fade-up" data-aos-delay="400">
+            <div class="process__num">5</div>
+            <h4 class="process__title">로그 확인</h4>
+            <p class="process__text">전송 내역 자동 기록<br>및 결과 확인</p>
+          </div>
+        </div>
+        
+        <div class="notice" data-aos="fade-up">
+          <span class="notice__icon">⚠️</span>
+          <p class="notice__text">문자 전송 중에는 Chrome을 건드리지 마세요. 안정적인 인터넷 연결이 필요합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="section" id="architecture">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <span class="section__label">05 — ARCHITECTURE</span>
+          <h2 class="section__title">시스템 구조</h2>
+        </header>
+        
+        <div class="arch" data-aos="fade-up">
+          <div class="arch__node">
+            <div class="arch__icon">📊</div>
+            <strong>Google Sheets</strong>
+            <span>상담 데이터</span>
+          </div>
+          <div class="arch__connector">
+            <span>API 연동</span>
+            <div class="arch__line"></div>
+          </div>
+          <div class="arch__node arch__node--main">
+            <div class="arch__icon">💻</div>
+            <strong>리마인드 발송기</strong>
+            <span>GUI Application</span>
+            <div class="arch__files">
+              <code>gui_app.py</code>
+              <code>automation.py</code>
+            </div>
+          </div>
+          <div class="arch__connector">
+            <span>Selenium</span>
+            <div class="arch__line"></div>
+          </div>
+          <div class="arch__node">
+            <div class="arch__icon">🌐</div>
+            <strong>Chrome</strong>
+            <span>Messages Web</span>
+          </div>
+          <div class="arch__connector">
+            <span>SMS</span>
+            <div class="arch__line"></div>
+          </div>
+          <div class="arch__node">
+            <div class="arch__icon">👤</div>
+            <strong>잠재 고객</strong>
+            <span>리마인드 수신</span>
+          </div>
+        </div>
+        
+        <div class="arch-details" data-aos="fade-up">
+          <div class="arch-detail">
+            <h4>데이터 소스</h4>
+            <p>gspread 라이브러리로 Google Sheets API 연동</p>
+          </div>
+          <div class="arch-detail">
+            <h4>자동화 엔진</h4>
+            <p>Selenium으로 Chrome 브라우저 제어</p>
+          </div>
+          <div class="arch-detail">
+            <h4>이미지 관리</h4>
+            <p>변리사별 맞춤 이미지 자동 매칭</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="section section--gradient" id="results">
+      <div class="container">
+        <header class="section__header section__header--light" data-aos="fade-up">
+          <span class="section__label">06 — RESULTS</span>
+          <h2 class="section__title">도입 성과</h2>
+        </header>
+        
+        <div class="results">
+          <div class="result result--main" data-aos="zoom-in" data-aos-delay="0">
+            <span class="result__label">수임율 증가</span>
+            <div class="result__value">
+              <span class="result__prefix">+</span>
+              <span class="result__num" data-count="11.6">0</span>
+              <span class="result__suffix">%p</span>
+            </div>
+            <span class="result__sub">88.5% 성장 🎉</span>
+          </div>
+          <div class="result" data-aos="zoom-in" data-aos-delay="100">
+            <span class="result__label">수임 리드타임 (평균)</span>
+            <div class="result__value">
+              <span class="result__prefix">-</span>
+              <span class="result__num" data-count="0.3">0</span>
+              <span class="result__suffix">일</span>
+            </div>
+            <span class="result__sub">평균값 감소</span>
+          </div>
+          <div class="result" data-aos="zoom-in" data-aos-delay="200">
+            <span class="result__label">수임 리드타임 (중간값)</span>
+            <div class="result__value">
+              <span class="result__prefix">-</span>
+              <span class="result__num" data-count="3">0</span>
+              <span class="result__suffix">일</span>
+            </div>
+            <span class="result__sub">중간값 감소</span>
+          </div>
+        </div>
+        
+        <div class="summary" data-aos="fade-up">
+          <div class="summary__col">
+            <h4>✨ 주요 성과</h4>
+            <ul>
+              <li>✓ AI 활용 자체 앱 제작으로 외부 비용 절감</li>
+              <li>✓ 수동 작업 자동화로 업무 효율 향상</li>
+              <li>✓ 전송 로그 자동 기록으로 관리 편의성 증대</li>
+            </ul>
+          </div>
+          <div class="summary__col">
+            <h4>📈 비즈니스 임팩트</h4>
+            <ul>
+              <li>✓ 잠재 고객 이탈 방지</li>
+              <li>✓ 고객 수임 결정 속도 개선</li>
+              <li>✓ 지속적인 수임율 상승 트렌드</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="section section--closing">
+      <div class="container">
+        <div class="closing" data-aos="fade-up">
+          <h2 class="closing__title">
+            데이터 기반의 의사결정과<br>
+            AI 활용능력,<br>
+            그리고 개발 역량이 만나면<br>
+            <span class="text-gradient">비즈니스는 성장합니다.</span>
+          </h2>
+          <div class="closing__author">
+            <div class="author__avatar">정</div>
+            <div class="author__info">
+              <span class="author__name">정성언</span>
+              <span class="author__role">CEO Staff · 전략기획</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">💬 REMIND</span>
+          <p>리마인드 팔로우업 메시지 자동 발송 앱</p>
+        </div>
+        <nav class="footer__nav">
+          <a href="#discovery">발견</a>
+          <a href="#solution">솔루션</a>
+          <a href="#features">기능</a>
+          <a href="#results">성과</a>
+        </nav>
+        <p class="footer__copy">© 2025 정성언. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
