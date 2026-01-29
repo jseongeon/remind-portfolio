@@ -112,12 +112,32 @@
     });
   }
 
+  // === Phone Send Count Animation ===
+  function initPhoneSendAnimation() {
+    const sendCountEl = document.getElementById('sendCount');
+    if (!sendCountEl) return;
+
+    let currentCount = 1;
+    const maxCount = 10;
+    const progressDuration = 3000; // 3초 (CSS animation과 동일)
+
+    // 3초마다 숫자 증가 (진행바 애니메이션과 동기화)
+    setInterval(() => {
+      currentCount++;
+      if (currentCount > maxCount) {
+        currentCount = 1; // 15 이후 1로 리셋
+      }
+      sendCountEl.textContent = currentCount;
+    }, progressDuration);
+  }
+
   // Export functions
   window.Animations = {
     initAOS,
     initCounters,
     initParallax,
-    initMagneticButtons
+    initMagneticButtons,
+    initPhoneSendAnimation
   };
 
 })();

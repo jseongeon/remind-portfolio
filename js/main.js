@@ -22,6 +22,7 @@
       window.Animations.initCounters();
       window.Animations.initParallax();
       window.Animations.initMagneticButtons();
+      window.Animations.initPhoneSendAnimation();
     }
   }
 
